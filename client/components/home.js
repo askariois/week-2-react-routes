@@ -14,12 +14,13 @@ const Home = () => {
         <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
           <Route exact path="/dashboard" component={() => <Dash />} />
         </div>
-        <div className="bg-indigo-900 text-white font-bold rounded-lg border shadow-lg p-10">
-          <Route exact path="/dashboard/profile/:username" component={() => <Prof />} />
-        </div>
 
         <div className="bg-indigo-700 text-white font-bold rounded-lg border shadow-lg p-10">
           <Route exact path="/dashboard/main" component={() => <Main />} />
+        </div>
+
+        <div className="bg-indigo-900 text-white font-bold rounded-lg border shadow-lg p-10">
+          <Route exact path="/dashboard/profile/:username" component={() => <Prof />} />
         </div>
       </div>
     </div>
