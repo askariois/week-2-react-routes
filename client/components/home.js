@@ -11,11 +11,9 @@ const Home = () => {
     <div>
       <Header />
       <div className="flex items-center justify-center h-screen">
-        <div className="bg-indigo-700 text-white font-bold rounded-lg border shadow-lg p-10">
-          <Route exact path="/dashboard" component={() => <Dash />} />
-          <Route exact path="/dashboard/main" component={() => <Main />} />
-          <Route exact path="/dashboard/profile/:username" component={() => <Prof />} />
-        </div>
+        <Route path="/dashboard" component={() => <Dash />} />
+        <Route path="/dashboard/main" component={() => <Main />} />
+        <Route path="/dashboard/profile/:username" component={() => <Prof />} />
       </div>
     </div>
   )

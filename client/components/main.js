@@ -8,9 +8,7 @@ import Head from './head'
 const Main = () => {
   return (
     <div>
-      <Head title="Hello" />
-
-
+      <Head title="Main" />
       <div className="flex items-center justify-center">
         <div className="bg-yellow-300 text-white font-bold rounded-lg border shadow-lg p-10">
           <div id="title">Main</div>
@@ -22,7 +20,6 @@ const Main = () => {
           <Link to="/dashboard">Go To Root</Link>
         </div>
       </div>
-
     </div>
   )
 }

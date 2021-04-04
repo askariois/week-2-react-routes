@@ -8,7 +8,7 @@ const Prof = () => {
   const { username } = useParams()
   return (
     <div>
-      <Head title="Hello" />
+      <Head title="Profile" />
 
 
       <div className="flex items-center justify-center">
