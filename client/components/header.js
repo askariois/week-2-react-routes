@@ -24,9 +24,10 @@ const Header = () => {
           Tailwind CSS
         </button>
       </div>
-      <a href="https://www.google.com/">
-        {toggled && (
-          <div id="menu" className="block">
+
+      {toggled && (
+        <div id="menu" className="block">
+          <a href="https://www.google.com/">
             <button
               type="button"
               className="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-700 hover:text-white hover:border-white"
@@ -40,9 +41,9 @@ const Header = () => {
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
             </button>
-          </div>
-        )}
-      </a>
+          </a>
+        </div>
+      )}
     </nav>
   )
 }
