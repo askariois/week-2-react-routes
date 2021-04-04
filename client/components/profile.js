@@ -5,7 +5,7 @@ import Head from './head'
 
 
 const Prof = () => {
-  const { username } = useParams()
+  const { user } = useParams()
   return (
     <div>
       <Head title="Profile" />
@@ -22,7 +22,7 @@ const Prof = () => {
           <Link to="/dashboard/main">Go To Main</Link>
         </div>
       </div>
-      <div id="username">{username}</div>
+      <div id="username">{user}</div>
     </div>
   )
 }
