@@ -24,8 +24,8 @@ const Header = () => {
           Tailwind CSS
         </button>
       </div>
-      {toggled && (
-        <a href="https://www.google.com/">
+      <a href="https://www.google.com/">
+        {toggled && (
           <div id="menu" className="block">
             <button
               type="button"
@@ -41,8 +41,8 @@ const Header = () => {
               </svg>
             </button>
           </div>
-        </a>
-      )}
+        )}
+      </a>
     </nav>
   )
 }
