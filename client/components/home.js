@@ -11,9 +11,9 @@ const Home = () => {
     <div>
       <Header />
       <div className="flex items-center justify-center h-screen">
-        <Route path="/dashboard" component={() => <Dash />} />
-        <Route path="/dashboard/main" component={() => <Main />} />
-        <Route path="/dashboard/profile/:username" component={() => <Prof />} />
+        <Route exact path="/dashboard" component={() => <Dash />} />
+        <Route exact path="/dashboard/main" component={() => <Main />} />
+        <Route exact path="/dashboard/profile/:username" component={() => <Prof />} />
       </div>
     </div>
   )
